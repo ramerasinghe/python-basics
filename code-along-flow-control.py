@@ -71,4 +71,3 @@ fruits = ['apple', 'banana', 'cherry', 3, 4.5]
 
 for i in fruits:
     print(f'Fruit: {i}')
-
