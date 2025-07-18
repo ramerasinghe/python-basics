@@ -53,7 +53,7 @@ print("Correct! Next year, it will be", year + 1)  # Prints the year plus one
 vegetables = ["lettuce", "carrots", "broccoli"]     # Creates a list with three items — [] are used to create lists
 vegetables.append("cauliflower")               # Adds "cauliflower" to the end
 vegetables.remove("lettuce")                 # Removes "lettuce" from the list
-print(len(vegetables))                    # Prints the number of items in the list / lists length
+print(len(vegetables))                    # 'Len" prints the number of items in the list / lists length
 
 
 # LOOPS
