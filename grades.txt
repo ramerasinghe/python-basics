@@ -1,2 +1,2 @@
-Molly: Math 100|A
-Ryan: Spelling 88|B
+Daniel: Python 100|A
+Rebecca: Math 80|B
