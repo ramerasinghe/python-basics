@@ -21,20 +21,21 @@ def print_summary(student_list):
     print("\nStudent Summary:")
     for student in student_list: # for-loop 
 
-        print(f"{student['name']}: {student['class']} {student['score']}")
+        print(f"{student['name']}: {student['class']} {student['score']}|{student['grade']}")
 
 
 def save_to_file(student_list):
-    """save_to_file(student_list) sales all of student data to 'grades.txt', one student per line"""
+    """save_to_file(student_list) saves all of student data to 'grades.txt', one student per line"""
 
-    with open("grades.txt", "w") as file: 
+    with open("grades.txt", "w") as file: # for-loop 
         for student in student_list:
-            file.write(f"{student['name']}: {student['class']} {student['grade']}\n")
+            file.write(f"{student['name']}: {student['class']} {student['score']}|{student['grade']}\n")
 
 
 def main():
     """main() function collects student data, summarizes it, and saves it to a file."""
 
+    print()
     print("Welcome to the Student Grade Tracker!\n")
 
     students = []
