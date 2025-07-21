@@ -1,7 +1,7 @@
 # Student Grade Tracker
 
 def get_letter_grade(score):  
-    """get_letter_grade(score) function returns letter grade when numeric score is  provided"""
+    """get_letter_grade(score) function returns letter grade when numeric score is provided"""
 
     if score >= 90:
         return 'A'
@@ -19,7 +19,7 @@ def print_summary(student_list):
     """print_summary(student_list) function prints a summary of student data collected """
 
     print("\nStudent Summary:")
-    for student in student_list:    # for-loop starts here
+    for student in student_list: # for-loop 
 
         print(f"{student['name']}: {student['class']} {student['score']}")
 
@@ -39,13 +39,13 @@ def main():
 
     students = []
 
-    while True:
+    while True:                 # main input loop
         raw_name = input("Enter student name: ")
         name = raw_name.strip().title()
 
         class_name = input("Enter class:").strip().title()
 
-        while True:
+        while True:             # data validation loop                                         
             score_input = input("Enter score (0-100):").strip() 
 
             try:
@@ -75,4 +75,6 @@ def main():
     save_to_file(students)                              
     print("\nStudent data saved to grades.txt")            
 
+with open("grades.txt", "w") as file:
 
+    main()
